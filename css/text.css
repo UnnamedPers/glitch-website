@@ -1,0 +1,45 @@
+@font-face {
+
+    /* PIXEBOY */
+    font-family: "Pixeboy";
+    src: url("https://db.onlinewebfonts.com/t/3118b7f4e7160b4cd86ad75ad9e2a074.eot");
+    src: url("https://db.onlinewebfonts.com/t/3118b7f4e7160b4cd86ad75ad9e2a074.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/3118b7f4e7160b4cd86ad75ad9e2a074.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/3118b7f4e7160b4cd86ad75ad9e2a074.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/3118b7f4e7160b4cd86ad75ad9e2a074.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/3118b7f4e7160b4cd86ad75ad9e2a074.svg#Pixeboy")format("svg");
+
+    /* INTER BOLD */
+    font-family: "Inter Bold";
+    src: url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.eot");
+    src: url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.svg#Inter Bold")format("svg");
+}
+
+h1{
+    font-family: "Inter Bold";
+    font-size: 78px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: "Inter Bold";
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: "Pixeboy";
+    font-size: 26px;
+}
+
+.text-black{
+    color: #1e1e1e;
+}
+
+.text-white{
+    color: #e9e9e9;
+}
