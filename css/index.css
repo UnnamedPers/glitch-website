@@ -1,0 +1,219 @@
+/* HEADER */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 100px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    height: 800px;
+    width: 100%;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 100px;
+    gap: 33px;
+    max-width: 1920px;
+}
+
+.header-first {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 4px solid #1e1e1e;
+    padding: 10px 20px 10px 20px;
+}
+
+.header-second {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 4px solid #1e1e1e;
+    background-color: #abdd36;
+}
+
+.sale-animation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.explore-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: 4px solid #1e1e1e;
+}
+
+
+/* SALE ANIMATION */
+
+.sale-animation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.sale-animation h2 {
+    position: absolute;
+    white-space: nowrap;
+    left: 1000px;
+}
+
+
+
+/* REVIEWS */
+
+.reviews-section h2 {
+    text-align: center;
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 34px;
+}
+
+
+.review {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.review p {
+    margin: 0;
+    font-family: 'ByteBounce';
+    text-transform: none;
+}
+
+.review-header {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.review-header p {
+    font-family: "Pixeboy";
+    margin: 0;
+    color: #FF24F4
+}
+
+.review-stars {
+    display: flex;
+    gap: 5px;
+    height: 25px;
+}
+
+.review-stars img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    width: 100vw;
+    background-color: #1e1e1e;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+footer p {
+    font-family: "ByteBounce";
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    padding: 21px 90px;
+    max-width: 1920px;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.footer-left .logo {
+    width: 114px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.footer-links p {
+    margin: 0;
+    text-align: left;
+}
+
+.footer-designer p {
+    margin-top: 24px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+    align-self: stretch;
+    width: 100%;
+}
+
+.footer-newsletters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-newsletters p {
+    margin: 0;
+    text-align: right;
+}
+
+.newsletter-input {
+    display: flex;
+    padding: 10px 23px;
+    align-items: center;
+    gap: 10px;
+    border: 4px solid white;
+    width: 500px;
+}
+
+.newsletter-input p {
+    margin: 0;
+}

@@ -9,6 +9,13 @@
     url("https://db.onlinewebfonts.com/t/3118b7f4e7160b4cd86ad75ad9e2a074.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/3118b7f4e7160b4cd86ad75ad9e2a074.svg#Pixeboy")format("svg");
 
+    /* BYTEBOUNCE */
+    font-family: 'ByteBounce Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ByteBounce Medium'), url('ByteBounce.woff') format('woff');
+
+
     /* INTER BOLD */
     font-family: "Inter Bold";
     src: url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.eot");
@@ -17,12 +24,14 @@
     url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.woff")format("woff"),
     url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.svg#Inter Bold")format("svg");
+
 }
 
 h1{
     font-family: "Inter Bold";
     font-size: 78px;
     text-transform: uppercase;
+    margin: 0;
 }
 
 h2{
@@ -34,6 +43,7 @@ h2{
 p{
     font-family: "Pixeboy";
     font-size: 26px;
+    margin: 0;
 }
 
 .text-black{
