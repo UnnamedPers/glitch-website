@@ -29,17 +29,21 @@ nav {
 }
 
 .explore-new {
-    background-color: #FF24F4;
+    background-color: var(--pink);
     padding: 6px;
     height: 39px;
     width: 69px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
 .explore-new p {
     padding-top: 2px;
+    z-index: 2;
 }
 
 .nav-logo img {
@@ -55,27 +59,79 @@ nav {
 
 .cart-button {
     padding: 3px 10px 3px 13px;
-    border: 4px solid #1e1e1e;
+    border: 4px solid var(--black);
     display: flex;
     align-items: center;
     gap: 10px;
     height: 49px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
 }
 
 .cart-button img {
     width: 36px;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+.cart-button p {
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+.cart-button:hover {
+    cursor: pointer;
+    background-color: var(--black);
 }
 
 .mode-button {
     padding: 3px 6px 3px 6px;
-    border: 4px solid #1e1e1e;
+    border: 4px solid var(--black);
     display: flex;
     align-items: center;
     height: 49px;
     width: 55px;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
 .mode-button img {
     width: 31px;
+    z-index: 2;
+}
+
+/* HOVER ANIMATION */
+.hover-animation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hover-skew {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    transform: skewX(-20deg);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.cart-button:hover .hover-skew {
+    opacity: 1;
+}
+
+.mode-button:hover .hover-skew {
+    opacity: 1;
+}
+
+.explore-new:hover .hover-skew {
+    opacity: 1;
 }
