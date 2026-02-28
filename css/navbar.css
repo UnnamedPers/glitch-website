@@ -17,9 +17,9 @@ nav {
     background-color: #e9e9e999;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    max-width: 1920px;
+    /* max-width: 1920px; */
     margin: 0 auto;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .nav-explore {
@@ -39,6 +39,7 @@ nav {
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
+    border: 4px solid var(--pink);
 }
 
 .explore-new p {
@@ -59,7 +60,7 @@ nav {
 
 .cart-button {
     padding: 3px 10px 3px 13px;
-    border: 4px solid var(--black);
+    border: 4px solid var(--primary);
     display: flex;
     align-items: center;
     gap: 10px;
@@ -82,12 +83,12 @@ nav {
 
 .cart-button:hover {
     cursor: pointer;
-    background-color: var(--black);
+    background-color: var(--primary);
 }
 
 .mode-button {
     padding: 3px 6px 3px 6px;
-    border: 4px solid var(--black);
+    border: 4px solid var(--primary);
     display: flex;
     align-items: center;
     height: 49px;
@@ -103,35 +104,150 @@ nav {
     z-index: 2;
 }
 
-/* HOVER ANIMATION */
-.hover-animation {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+/* Cart Popup */
+
+.cart-popup {
+    position: fixed;
+    top: -1000px;
+    right: 90px;
+    width: 500px;
+    background-color: var(--background);
+    z-index: 1001;
+    border: 4px solid var(--primary);
+    padding: 30px 30px 20px 20px;
+    transition: top 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cart-popup.active {
+    top: 100px;
+}
+
+.cart-popup h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.cart-item img {
+    width: 150px;
+    height: 200px;
+    border: 4px solid var(--primary);
+}
+
+.cart-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.cart-item-info h2 {
+    margin: 0;
+}
+
+.cart-item-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item-quantity {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.quantity-button {
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.quantity-button p {
+    margin: 0;
+    font-family: "Inter Bold";
+    font-size: 16px;
+    padding-bottom: 2px;
+}
+
+.cart-controls {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkout-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: 4px solid var(--primary);
+    background-color: var(--primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.checkout-button p, .empty-cart-button p {
+    z-index: 2;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.checkout-button:hover, .empty-cart-button:hover {
+    cursor: pointer;
+}
+
+.empty-cart-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: 4px solid var(--primary);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.cart-overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 0;
-    pointer-events: none;
-}
-
-.hover-skew {
-    position: absolute;
-    width: 20px;
+    width: 100%;
     height: 100%;
-    transform: skewX(-20deg);
-    z-index: 1;
-    pointer-events: none;
-    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.254);
+    z-index: 900;
+    backdrop-filter: blur(10px);
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-.cart-button:hover .hover-skew {
+.cart-overlay.active {
     opacity: 1;
+    visibility: visible;
 }
 
-.mode-button:hover .hover-skew {
-    opacity: 1;
-}
 
-.explore-new:hover .hover-skew {
-    opacity: 1;
-}
+

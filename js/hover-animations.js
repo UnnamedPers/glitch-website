@@ -1,20 +1,28 @@
 function initGlitchButton(button, colorMode) {
+    if (!button) return;
     // 1. Hover Listeners
     button.addEventListener("mouseover", () => {
         if (colorMode === "black") {
-            button.style.backgroundColor = "var(--black)";
-            button.style.color = "var(--white)";
+            button.style.backgroundColor = "var(--primary)";
+            button.style.color = "var(--background)";
             const img = button.querySelector("img");
             if (img) img.style.filter = "brightness(0) invert(1)";
             const p = button.querySelector("p");
-            if (p) p.style.color = "var(--white)";
+            if (p) p.style.color = "var(--background)";
         } else if (colorMode === "pink") {
             button.style.backgroundColor = "var(--pink)";
-            button.style.color = "var(--white)";
+            button.style.color = "var(--background)";
             const img = button.querySelector("img");
             if (img) img.style.filter = "brightness(0) invert(1)";
             const p = button.querySelector("p");
-            if (p) p.style.color = "var(--white)";
+            if (p) p.style.color = "var(--background)";
+        } else if (colorMode === "white") {
+            button.style.backgroundColor = "var(--background)";
+            button.style.color = "var(--primary)";
+            const img = button.querySelector("img");
+            if (img) img.style.filter = "brightness(0) invert(1)";
+            const p = button.querySelector("p");
+            if (p) p.style.color = "var(--primary)";
         }
     });
 
@@ -27,6 +35,13 @@ function initGlitchButton(button, colorMode) {
             const p = button.querySelector("p");
             if (p) p.style.color = "";
         } else if (colorMode === "pink") {
+            button.style.backgroundColor = "";
+            button.style.color = "";
+            const img = button.querySelector("img");
+            if (img) img.style.filter = "";
+            const p = button.querySelector("p");
+            if (p) p.style.color = "";
+        } else if (colorMode === "white") {
             button.style.backgroundColor = "";
             button.style.color = "";
             const img = button.querySelector("img");
@@ -51,6 +66,8 @@ function initGlitchButton(button, colorMode) {
             skew.style.backgroundColor = "#ffffff2c";
         } else if (colorMode === "pink") {
             skew.style.backgroundColor = "#b300ad53";
+        } else if (colorMode === "white") {
+            skew.style.backgroundColor = "#6e6e6e2c";
         }
 
         const startX = i * spacing;
@@ -82,5 +99,6 @@ function initGlitchButton(button, colorMode) {
 initGlitchButton(document.querySelector('.cart-button'), "black");
 initGlitchButton(document.querySelector('.mode-button'), "black");
 initGlitchButton(document.querySelector('.explore-new'), "pink");
-
-
+initGlitchButton(document.querySelector('.explore-button'), "white");
+initGlitchButton(document.querySelector('.checkout-button'), "white");
+initGlitchButton(document.querySelector('.empty-cart-button'), "black");

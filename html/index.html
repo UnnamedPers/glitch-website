@@ -5,46 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glitch</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/text.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/index.css">
     <script src="../js/sales-animation.js" defer></script>
     <script src="../js/hover-animations.js" defer></script>
+    <script src="../js/cart-popup.js" defer></script>
 </head>
 
 <body>
     <nav>
-        <div class="nav-explore">
+        <a href="products.html" class="nav-explore">
             <p class="text-black">EXPLORE</p>
             <div class="explore-new">
                 <div class="hover-animation"></div>
                 <p class="text-white">NEW!</p>
             </div>
-        </div>
-        <div class="nav-logo">
+        </a>
+        <a href="#" class="nav-logo">
             <img src="../images/logo.png" alt="">
-        </div>
+        </a>
         <div class="nav-buttons">
-            <div class="cart-button">
+            <a href="#" class="cart-button">
                 <div class="hover-animation">
                     <!-- <div class="hover-skew"></div> -->
                 </div>
                 <p class="text-black">CART</p>
                 <img src="../images/cart.png" alt="">
-            </div>
+            </a>
             <div class="mode-button">
                 <img src="../images/sun.png" alt="">
             </div>
         </div>
     </nav>
 
+    <div class="cart-popup">
+        <h2>YOUR CART</h2>
+        <div class="cart-list">
+            <div class="cart-item">
+                <img src="../images/placeholder.jpg" alt="">
+                <div class="cart-item-info">
+                    <h2>Product Name</h2>
+                    <div class="cart-item-price">
+                        <p class="text-black">$0.00</p>
+                        <div class="cart-item-quantity">
+                            <p class="text-black">Quantity: 1</p>
+                            <div class="quantity-button">
+                                <p class="text-black">+</p>
+                            </div>
+                            <div class="quantity-button">
+                                <p class="text-black">-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-black">Total: $0.00</p>
+        <div class="cart-controls">
+            <a href="checkout.html" class="checkout-button">
+                <div class="hover-animation"></div>
+                <p class="text-white">CHECKOUT</p>
+            </a>
+            <div class="empty-cart-button">
+                <div class="hover-animation"></div>
+                <p class="text-black">EMPTY CART</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-overlay"></div>
+
+
     <header>
         <div class="header-first">
             <h1 class="text-white">DEFINE<br>YOUR OWN<br>PERFECTION!</h1>
             <p class="text-white">Explore our variety of items for you or your home with a unique glitchy vibe</p>
-            <div class="explore-button">
+            <a href="products.html" class="explore-button">
+                <div class="hover-animation"></div>
                 <p class="text-white">EXPLORE</p>
-            </div>
+            </a>
         </div>
 
         <div class="header-second">
@@ -86,6 +127,32 @@
             <div class="review">
                 <div class="review-header">
                     <p>MIA</p>
+                    <div class="review-stars">
+                        <img src="../images/star.png" alt="">
+                        <img src="../images/star.png" alt="">
+                        <img src="../images/star.png" alt="">
+                        <img src="../images/star.png" alt="">
+                        <img src="../images/star.png" alt="">
+                    </div>
+                </div>
+                <p>Thank you for making me the coolest guy in class!</p>
+            </div>
+            <div class="review">
+                <div class="review-header">
+                    <p>ROBERT</p>
+                    <div class="review-stars">
+                        <img src="../images/star.png" alt="">
+                        <img src="../images/star.png" alt="">
+                        <img src="../images/star.png" alt="">
+                        <img src="../images/star.png" alt="">
+                        <img src="../images/star.png" alt="">
+                    </div>
+                </div>
+                <p>Thank you for making me the coolest guy in class!</p>
+            </div>
+            <div class="review">
+                <div class="review-header">
+                    <p>ROBERT</p>
                     <div class="review-stars">
                         <img src="../images/star.png" alt="">
                         <img src="../images/star.png" alt="">

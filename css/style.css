@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    --background: #e9e9e9;
+    --primary: #1e1e1e;
+    --pink: #FF24F4;
+    --green: #abdd36;
+    zoom: 90%;
+}
+
+/* HOVER ANIMATION */
+.hover-animation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hover-skew {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    transform: skewX(-20deg);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.cart-button:hover .hover-skew,
+.mode-button:hover .hover-skew,
+.explore-new:hover .hover-skew,
+.explore-button:hover .hover-skew,
+.checkout-button:hover .hover-skew,
+.empty-cart-button:hover .hover-skew {
+    opacity: 1;
+}
