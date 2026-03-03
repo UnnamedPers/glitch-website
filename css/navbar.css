@@ -29,22 +29,13 @@ nav {
 }
 
 .explore-new {
-    background-color: var(--pink);
     padding: 6px;
     height: 39px;
     width: 69px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-    border: 4px solid var(--pink);
 }
 
 .explore-new p {
     padding-top: 2px;
-    z-index: 2;
 }
 
 .nav-logo img {
@@ -60,48 +51,26 @@ nav {
 
 .cart-button {
     padding: 3px 10px 3px 13px;
-    border: 4px solid var(--primary);
-    display: flex;
-    align-items: center;
     gap: 10px;
     height: 49px;
-    transition: all 0.3s ease-in-out;
-    position: relative;
-    overflow: hidden;
 }
 
 .cart-button img {
     width: 36px;
-    z-index: 2;
-    transition: all 0.3s ease-in-out;
-}
-
-.cart-button p {
-    z-index: 2;
-    transition: all 0.3s ease-in-out;
 }
 
 .cart-button:hover {
-    cursor: pointer;
     background-color: var(--primary);
 }
 
 .mode-button {
     padding: 3px 6px 3px 6px;
-    border: 4px solid var(--primary);
-    display: flex;
-    align-items: center;
     height: 49px;
     width: 55px;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
 }
 
 .mode-button img {
     width: 31px;
-    z-index: 2;
 }
 
 /* Cart Popup */
@@ -173,16 +142,10 @@ nav {
 .quantity-button {
     width: 20px;
     height: 20px;
-    border: 3px solid var(--primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
+    border-width: 3px;
 }
 
 .quantity-button p {
-    margin: 0;
     font-family: "Inter Bold";
     font-size: 16px;
     padding-bottom: 2px;
@@ -197,37 +160,13 @@ nav {
 }
 
 .checkout-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 200px;
     height: 50px;
-    border: 4px solid var(--primary);
-    background-color: var(--primary);
-    position: relative;
-    overflow: hidden;
-}
-
-.checkout-button p, .empty-cart-button p {
-    z-index: 2;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-}
-
-.checkout-button:hover, .empty-cart-button:hover {
-    cursor: pointer;
 }
 
 .empty-cart-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 200px;
     height: 50px;
-    border: 4px solid var(--primary);
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
 }
 
 .cart-overlay {

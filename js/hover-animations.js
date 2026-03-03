@@ -102,3 +102,14 @@ initGlitchButton(document.querySelector('.explore-new'), "pink");
 initGlitchButton(document.querySelector('.explore-button'), "white");
 initGlitchButton(document.querySelector('.checkout-button'), "white");
 initGlitchButton(document.querySelector('.empty-cart-button'), "black");
+initGlitchButton(document.querySelector('.apply-button'), "white");
+initGlitchButton(document.querySelector('#cart-1'), "white");
+initGlitchButton(document.querySelector('#cart-2'), "white");
+initGlitchButton(document.querySelector('#cart-3'), "white");
+initGlitchButton(document.querySelector('#cart-4'), "white");
+initGlitchButton(document.querySelector('#cart-5'), "white");
+initGlitchButton(document.querySelector('#cart-6'), "white");
+initGlitchButton(document.querySelector('#cart-7'), "white");
+initGlitchButton(document.querySelector('#cart-8'), "white");
+
+
