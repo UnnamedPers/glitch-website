@@ -1,30 +1,22 @@
 @font-face {
-
-    /* PIXEBOY */
     font-family: "Pixeboy";
-    src: url("https://db.onlinewebfonts.com/t/3118b7f4e7160b4cd86ad75ad9e2a074.eot");
-    src: url("https://db.onlinewebfonts.com/t/3118b7f4e7160b4cd86ad75ad9e2a074.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/3118b7f4e7160b4cd86ad75ad9e2a074.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/3118b7f4e7160b4cd86ad75ad9e2a074.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/3118b7f4e7160b4cd86ad75ad9e2a074.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/3118b7f4e7160b4cd86ad75ad9e2a074.svg#Pixeboy")format("svg");
+    src: url("../font/Pixeboy.woff2") format("woff2"),
+         url("../font/Pixeboy.woff") format("woff"),
+         url("../font/Pixeboy.ttf") format("truetype");
+}
 
-    /* BYTEBOUNCE */
-    font-family: 'ByteBounce Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('ByteBounce Medium'), url('ByteBounce.woff') format('woff');
+@font-face {
+    font-family: 'ByteBounce';
+    src: local('ByteBounce'), 
+         local('ByteBounce Medium'),
+         url('../font/ByteBounce.woff') format('woff');
+}
 
-
-    /* INTER BOLD */
+@font-face {
     font-family: "Inter Bold";
-    src: url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.eot");
-    src: url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/6808f299811c1703a1cacc77ced26c5d.svg#Inter Bold")format("svg");
-
+    src: url("../font/Inter-Bold.woff2") format("woff2"),
+         url("../font/Inter-Bold.woff") format("woff"),
+         url("../font/Inter-Bold.ttf") format("truetype");
 }
 
 h1{
