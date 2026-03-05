@@ -10,29 +10,57 @@
     <link rel="stylesheet" href="css/products.css">
     <script src="js/hover-animations.js" defer></script>
     <script src="js/cart-popup.js" defer></script>
+    <script src="js/products-filter.js" defer></script>
 </head>
 <body>
-    <nav>
-        <div class="nav-explore">
+    <nav class="nav-desktop">
+        <a href="products.html" class="nav-explore">
             <p class="text-black">EXPLORE</p>
             <div class="explore-new glitch-button btn-pink-bg">
                 <div class="hover-animation"></div>
                 <p class="text-white">NEW!</p>
             </div>
-        </div>
+        </a>
         <a href="index.html" class="nav-logo">
             <img src="images/logo.png" alt="">
         </a>
         <div class="nav-buttons">
-            <div class="cart-button glitch-button btn-transparent">
+            <a href="#" class="cart-button glitch-button btn-transparent desktop-cart">
                 <div class="hover-animation">
                     <!-- <div class="hover-skew"></div> -->
                 </div>
                 <p class="text-black">CART</p>
                 <img src="images/cart.png" alt="">
-            </div>
+            </a>
             <div class="mode-button glitch-button btn-transparent">
                 <img src="images/sun.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <nav class="nav-mobile">
+        <a href="index.html" class="nav-logo">
+            <img src="images/logo.png" alt="">
+        </a>
+        <div class="nav-mobile-container">
+            <a href="products.html" class="nav-explore">
+                <p class="text-black">EXPLORE</p>
+                <div class="explore-new glitch-button btn-pink-bg">
+                    <div class="hover-animation"></div>
+                    <p class="text-white">NEW!</p>
+                </div>
+            </a>
+            <div class="nav-buttons">
+                <a href="#" class="cart-button glitch-button btn-transparent mobile-cart">
+                    <div class="hover-animation">
+                        <!-- <div class="hover-skew"></div> -->
+                    </div>
+                    <p class="text-black">CART</p>
+                    <img src="images/cart.png" alt="">
+                </a>
+                <div class="mode-button glitch-button btn-transparent">
+                    <img src="images/sun.png" alt="">
+                </div>
             </div>
         </div>
     </nav>
@@ -79,8 +107,8 @@
             <h2 class="text-black">filter</h2>
             <div class="options-container">
                 <p class="text-black">SORT BY:</p>
-                <div class="links-container">
-                    <p class="text-black">- Popularity</p>
+                <div class="sort-links">
+                    <p class="text-black active">- Popularity</p>
                     <p class="text-black">- Recent</p>
                     <p class="text-black">- Lowest Price</p>
                     <p class="text-black">- Highest Price</p>
@@ -88,19 +116,19 @@
             </div>
             <div class="options-container">
                 <p class="text-black">CATEGORIES:</p>
-                <div class="links-container">
-                    <p class="text-black">- All</p>
-                    <p class="text-black">- Category 1</p>
-                    <p class="text-black">- Category 2</p>
-                    <p class="text-black">- Category 3</p>
+                <div class="cat-links">
+                    <p class="text-black active">- All</p>
+                    <p class="text-black">- Home Decor</p>
+                    <p class="text-black">- Accessories</p>
+                    <p class="text-black">- Electronics</p>
                 </div>
             </div>
             <div class="options-container">
                 <p class="text-black">PRICE:</p>
                 <div class="price-buttons">
-                    <input type="text" placeholder="Min">
+                    <input id="min-price" type="number" placeholder="Min" min="0">
                     <p class="text-black">-</p>
-                    <input type="text" placeholder="Max">
+                    <input id="max-price" type="number" placeholder="Max" min="0">
                 </div>
             </div>
             <div class="apply-button glitch-button btn-black-bg">
@@ -109,102 +137,7 @@
             </div>
         </div>
         <div class="products-container">
-            <div class="product-card">
-                <img src="images/placeholder.jpg" alt="">
-                <div class="product-info">
-                    <h2 class="text-black">Product Name</h2>
-                    <p class="text-black">Category</p>
-                    <p class="text-black">$0.00</p>
-                    <div id="cart-1" class="add-to-cart-button glitch-button btn-transparent">
-                        <div class="hover-animation"></div>
-                        <p class="text-black">ADD TO CART</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="images/placeholder.jpg" alt="">
-                <div class="product-info">
-                    <h2 class="text-black">Product Name</h2>
-                    <p class="text-black">Category</p>
-                    <p class="text-black">$0.00</p>
-                    <div id="cart-2" class="add-to-cart-button glitch-button btn-transparent">
-                        <div class="hover-animation"></div>
-                        <p class="text-black">ADD TO CART</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="images/placeholder.jpg" alt="">
-                <div class="product-info">
-                    <h2 class="text-black">Product Name</h2>
-                    <p class="text-black">Category</p>
-                    <p class="text-black">$0.00</p>
-                    <div id="cart-3" class="add-to-cart-button glitch-button btn-transparent">
-                        <div class="hover-animation"></div>
-                        <p class="text-black">ADD TO CART</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="images/placeholder.jpg" alt="">
-                <div class="product-info">
-                    <h2 class="text-black">Product Name</h2>
-                    <p class="text-black">Category</p>
-                    <p class="text-black">$0.00</p>
-                    <div id="cart-4" class="add-to-cart-button glitch-button btn-transparent">
-                        <div class="hover-animation"></div>
-                        <p class="text-black">ADD TO CART</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="images/placeholder.jpg" alt="">
-                <div class="product-info">
-                    <h2 class="text-black">Product Name</h2>
-                    <p class="text-black">Category</p>
-                    <p class="text-black">$0.00</p>
-                    <div id="cart-5" class="add-to-cart-button glitch-button btn-transparent">
-                        <div class="hover-animation"></div>
-                        <p class="text-black">ADD TO CART</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="images/placeholder.jpg" alt="">
-                <div class="product-info">
-                    <h2 class="text-black">Product Name</h2>
-                    <p class="text-black">Category</p>
-                    <p class="text-black">$0.00</p>
-                    <div id="cart-6" class="add-to-cart-button glitch-button btn-transparent">
-                        <div class="hover-animation"></div>
-                        <p class="text-black">ADD TO CART</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="images/placeholder.jpg" alt="">
-                <div class="product-info">
-                    <h2 class="text-black">Product Name</h2>
-                    <p class="text-black">Category</p>
-                    <p class="text-black">$0.00</p>
-                    <div id="cart-7" class="add-to-cart-button glitch-button btn-transparent">
-                        <div class="hover-animation"></div>
-                        <p class="text-black">ADD TO CART</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="images/placeholder.jpg" alt="">
-                <div class="product-info">
-                    <h2 class="text-black">Product Name</h2>
-                    <p class="text-black">Category</p>
-                    <p class="text-black">$0.00</p>
-                    <div id="cart-8" class="add-to-cart-button glitch-button btn-transparent">
-                        <div class="hover-animation"></div>
-                        <p class="text-black">ADD TO CART</p>
-                    </div>
-                </div>
-            </div>
+            <!-- Products will be spawned here -->
         </div>
     </div>
 
@@ -232,9 +165,7 @@
                 </div>
                 <div class="footer-newsletters">
                     <p class="text-white">SUBSCRIBE TO OUR NEWSLETTER!</p>
-                    <div class="newsletter-input">
-                        <p class="text-white">ENTER YOUR EMAIL...</p>
-                    </div>
+                    <input class="newsletter-input" type="email" placeholder="ENTER YOUR EMAIL...">
                 </div>
             </div>
         </div>

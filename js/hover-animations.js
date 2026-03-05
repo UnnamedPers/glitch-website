@@ -1,5 +1,7 @@
 function initGlitchButton(button, colorMode) {
-    if (!button) return;
+    if (!button || button.classList.contains('glitch-initialized')) return;
+    button.classList.add('glitch-initialized');
+
     // 1. Hover Listeners
     button.addEventListener("mouseover", () => {
         if (colorMode === "black") {
@@ -57,10 +59,19 @@ function initGlitchButton(button, colorMode) {
     const numSkews = Math.ceil(buttonWidth / spacing) + 1;
     const skews = [];
 
+    // Find or create hover-animation container
+    let hoverContainer = button.querySelector('.hover-animation');
+    if (!hoverContainer) {
+        hoverContainer = document.createElement('div');
+        hoverContainer.classList.add('hover-animation');
+        button.appendChild(hoverContainer);
+    }
+
+
     for (let i = 0; i < numSkews; i++) {
         const skew = document.createElement('div');
         skew.classList.add('hover-skew');
-        button.appendChild(skew);
+        hoverContainer.appendChild(skew);
         
         if (colorMode === "black") {
             skew.style.backgroundColor = "#ffffff2c";
@@ -96,20 +107,27 @@ function initGlitchButton(button, colorMode) {
 }
 
 // Initialize all desired buttons
-initGlitchButton(document.querySelector('.cart-button'), "black");
-initGlitchButton(document.querySelector('.mode-button'), "black");
-initGlitchButton(document.querySelector('.explore-new'), "pink");
-initGlitchButton(document.querySelector('.explore-button'), "white");
-initGlitchButton(document.querySelector('.checkout-button'), "white");
-initGlitchButton(document.querySelector('.empty-cart-button'), "black");
-initGlitchButton(document.querySelector('.apply-button'), "white");
-initGlitchButton(document.querySelector('#cart-1'), "white");
-initGlitchButton(document.querySelector('#cart-2'), "white");
-initGlitchButton(document.querySelector('#cart-3'), "white");
-initGlitchButton(document.querySelector('#cart-4'), "white");
-initGlitchButton(document.querySelector('#cart-5'), "white");
-initGlitchButton(document.querySelector('#cart-6'), "white");
-initGlitchButton(document.querySelector('#cart-7'), "white");
-initGlitchButton(document.querySelector('#cart-8'), "white");
+function initAllGlitchButtons() {
+    document.querySelectorAll('.glitch-button').forEach(b => {
+        let mode = "black";
+        
+        if (b.classList.contains('btn-black-bg')) {
+            mode = "white";
+        } else if (b.classList.contains('btn-pink-bg')) {
+            mode = "pink";
+        } else if (b.classList.contains('btn-white-outline')) {
+            mode = "white";
+        } else if (b.classList.contains('btn-transparent')) {
+            mode = "black";
+        } else if (b.classList.contains('btn-primary')) {
+            mode = "white";
+        }
+        
+        initGlitchButton(b, mode);
+    });
+}
 
-
+// Initialize all desired buttons on load
+window.addEventListener('load', initAllGlitchButtons);
+// Also run immediately in case some things are already there
+initAllGlitchButtons();

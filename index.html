@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="nav-desktop">
         <a href="products.html" class="nav-explore">
             <p class="text-black">EXPLORE</p>
             <div class="explore-new glitch-button btn-pink-bg">
@@ -27,7 +27,7 @@
             <img src="images/logo.png" alt="">
         </a>
         <div class="nav-buttons">
-            <a href="#" class="cart-button glitch-button btn-transparent">
+            <a href="#" class="cart-button glitch-button btn-transparent desktop-cart">
                 <div class="hover-animation">
                     <!-- <div class="hover-skew"></div> -->
                 </div>
@@ -36,6 +36,33 @@
             </a>
             <div class="mode-button glitch-button btn-transparent">
                 <img src="images/sun.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <nav class="nav-mobile">
+        <a href="#" class="nav-logo">
+            <img src="images/logo.png" alt="">
+        </a>
+        <div class="nav-mobile-container">
+            <a href="products.html" class="nav-explore">
+                <p class="text-black">EXPLORE</p>
+                <div class="explore-new glitch-button btn-pink-bg">
+                    <div class="hover-animation"></div>
+                    <p class="text-white">NEW!</p>
+                </div>
+            </a>
+            <div class="nav-buttons">
+                <a href="#" class="cart-button glitch-button btn-transparent mobile-cart">
+                    <div class="hover-animation">
+                        <!-- <div class="hover-skew"></div> -->
+                    </div>
+                    <p class="text-black">CART</p>
+                    <img src="images/cart.png" alt="">
+                </a>
+                <div class="mode-button glitch-button btn-transparent">
+                    <img src="images/sun.png" alt="">
+                </div>
             </div>
         </div>
     </nav>
@@ -80,7 +107,7 @@
 
     <header>
         <div class="header-first">
-            <h1 class="text-white">DEFINE<br>YOUR OWN<br>PERFECTION!</h1>
+            <h1 class="text-white">EMBRACE YOUR INNER RETRO!</h1>
             <p class="text-white">Explore our variety of items for you or your home with a unique glitchy vibe</p>
             <a href="products.html" class="explore-button glitch-button btn-white-outline">
                 <div class="hover-animation"></div>
@@ -180,7 +207,7 @@
         </div>
     </div>
 
-    <footer>
+   <footer>
         <div class="footer-container">
             <div class="footer-left">
                 <img class="logo" src="images/logo-white.png" alt="">
@@ -204,9 +231,7 @@
                 </div>
                 <div class="footer-newsletters">
                     <p class="text-white">SUBSCRIBE TO OUR NEWSLETTER!</p>
-                    <div class="newsletter-input">
-                        <p class="text-white">ENTER YOUR EMAIL...</p>
-                    </div>
+                    <input class="newsletter-input" type="email" placeholder="ENTER YOUR EMAIL...">
                 </div>
             </div>
         </div>
