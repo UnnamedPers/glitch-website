@@ -83,7 +83,7 @@ function updateCart() {
         const cartItemContent = `
             <img src="${allProducts[item[0]].image}" alt="${allProducts[item[0]].name}">
             <div class="cart-item-info">
-                <h2>${allProducts[item[0]].name}</h2>
+                <h2 class="text-black">${allProducts[item[0]].name}</h2>
                 <div class="cart-item-price">
                     <p class="text-black">${allProducts[item[0]].price}</p>
                     <div class="cart-item-quantity">

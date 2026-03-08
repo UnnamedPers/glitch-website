@@ -16,7 +16,7 @@ function textSpawning() {
     for (let i = 0; i < 15; i++) {
         const el = document.createElement("h2");
         el.textContent = "SALE!";
-        el.classList.add("text-white");
+        el.style.color = "#e9e9e9";
 
         // Randomize size, speed, and position
         const size = randomFromRange(24, 100);
