@@ -44,6 +44,14 @@ function spawnProducts(data) {
                 </div>
             </div>
         `;
+        productCard.addEventListener("click", (event) => {
+            // Check if we clicked the "Add to Cart" button or its children
+            if (!event.target.closest('.add-to-cart-button')) {
+                localStorage.setItem("product-page", data[i].id);
+                window.location.href = "product-page.html";
+            }
+        });
+
         productsContainer.appendChild(productCard);
     }
     // Re-initialize glitch buttons to include newly spawned ones

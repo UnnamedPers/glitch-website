@@ -2,7 +2,55 @@ main{
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 100px 90px 100px 90px;
+    gap: 5%;
+}
+
+.checkout-form{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: center;
+    gap: 20px;
+}
+
+.checkout-controls{
+    display: flex;
+    width: 100%;
+    padding-top: auto;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.glitch-button{
+    height: 50px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1118px) {
+    main{
+        margin-top: 50px;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+    .cart-list{
+        max-height: 65vh;
+    }
+
+    .checkout-form{
+        padding-top: 20px;
+        align-items:flex-start;
+    }
+
+    .checkout-controls{
+        flex-direction: column;
+    }
 }
 
 

@@ -6,9 +6,10 @@
     <title>[Products] - Glitch</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/text.css">
-    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/product-page.css">
     <script src="js/hover-animations.js" defer></script>
     <script src="js/cart-logic.js" defer></script>
+    <script src="js/product-page.js" defer></script>
 </head>
 <body>
     <nav class="nav-desktop">
@@ -23,6 +24,13 @@
             <img src="images/logo.png" alt="">
         </a>
         <div class="nav-buttons">
+            <a href="#" class="cart-button glitch-button btn-transparent desktop-cart">
+                <div class="hover-animation">
+                    <!-- <div class="hover-skew"></div> -->
+                </div>
+                <p class="text-black">CART</p>
+                <img src="images/cart.png" alt="">
+            </a>
             <div class="mode-button glitch-button btn-transparent">
                 <img src="images/sun.png" alt="">
             </div>
@@ -42,6 +50,13 @@
                 </div>
             </a>
             <div class="nav-buttons">
+                <a href="#" class="cart-button glitch-button btn-transparent mobile-cart">
+                    <div class="hover-animation">
+                        <!-- <div class="hover-skew"></div> -->
+                    </div>
+                    <p class="text-black">CART</p>
+                    <img src="images/cart.png" alt="">
+                </a>
                 <div class="mode-button glitch-button btn-transparent">
                     <img src="images/sun.png" alt="">
                 </div>
@@ -49,20 +64,38 @@
         </div>
     </nav>
 
-    <main>
+     <div class="cart-popup">
+        <h2>YOUR CART</h2>
         <div class="cart-list">
-            <!-- Cart items will be injected here automatically -->
+            <div class="cart-item">
+                <!-- Cart item content -->
+            </div>
         </div>
-        <div class="checkout-form">
-            <h1 class="text-black">CHECKOUT</h1>
-            <p class="total-text text-black">Total: $0.00</p>
-            <div class="checkout-controls">
-                <a href="products.html" class="glitch-button btn-transparent">
-                    <p class="text-black">Continue Shopping</p>
-                </a>
-                <div class="glitch-button btn-transparent">
-                    <p class="text-black">BUY</p>
-                </div>
+        <p class="total-text text-black">Total: $0.00</p>
+        <div class="cart-controls">
+            <a href="checkout.html" class="checkout-button glitch-button btn-black-bg">
+                <div class="hover-animation"></div>
+                <p class="text-white">CHECKOUT</p>
+            </a>
+            <div class="empty-cart-button glitch-button btn-transparent">
+                <div class="hover-animation"></div>
+                <p class="text-black">EMPTY CART</p>
+            </div>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <main>
+        <div class="image-section">
+            <img src="images/placeholder.jpg" alt="">
+        </div>
+        <div class="div info-section">
+            <h1 class="text-black name">Product Name</h1>
+            <p class="text-black category">Category</p>
+            <p class="text-black price">Price:</p>
+            <p class="text-black description">Description</p>
+            <div id="" class="add-to-cart-button glitch-button btn-transparent">
+                <p class="text-black">ADD TO CART</p>
             </div>
         </div>
     </main>
@@ -86,7 +119,6 @@
                 <div class="footer-socials">
                     <p class="text-white">FIND US ON:</p>
                     <div class="social-icons">
-
                     </div>
                 </div>
                 <div class="footer-newsletters">

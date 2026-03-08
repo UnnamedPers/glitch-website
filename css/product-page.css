@@ -1,0 +1,53 @@
+main{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 90px 100px 90px;
+    gap: 5%;
+    margin: auto;
+}
+
+.image-section img{
+    width: 100%;
+    aspect-ratio: 5 / 6;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-section{
+    width: 100%;
+    aspect-ratio: 5 / 6;
+    overflow: hidden;
+}
+
+.glitch-button{
+    height: 50px;
+}
+
+@media screen and (max-width: 1220px){
+    main{
+        flex-direction:column;
+        width:100%;
+        padding: 100px 20px 100px 20px;
+    }
+    .image-section{
+        aspect-ratio: 6/3;
+    }
+
+    .info-section{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1220px){
+    main{
+        padding: 150px 20px 100px 20px;
+    }
+}
