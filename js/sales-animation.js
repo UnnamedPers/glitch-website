@@ -11,6 +11,8 @@ function randomFromRange(min, max) {
 
 function textSpawning() {
     container.innerHTML = ""; // Clear previous text elements;
+    saletexts.length = 0; // Clear the array to prevent memory leaks
+    
     for (let i = 0; i < 15; i++) {
         const el = document.createElement("h2");
         el.textContent = "SALE!";

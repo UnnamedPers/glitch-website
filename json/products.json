@@ -1,10 +1,10 @@
 [
-    {"id": 1, "name": "Tetris Lamp", "price": 29.99, "image": "images/products/tetris-lamp.png", "description": "Product Description", "category": "Home Decor", "date": "2025-01-01"},
-    {"id": 2, "name": "BurgerTime Keychain", "price": 9.99, "image": "images/products/burgertime-keychain.png", "description": "Product Description", "category": "Accessories", "date": "2025-01-01"},
-    {"id": 3, "name": "8BitDo© Controller", "price": 49.99, "image": "images/products/8bitdo-controller.png", "description": "Product Description", "category": "Electronics", "date": "2025-01-01"},
-    {"id": 4, "name": "Retro Stickers", "price": 2.99, "image": "images/products/retro-stickers.png", "description": "Product Description", "category": "Accessories", "date": "2025-01-01"},
-    {"id": 5, "name": "MSPaint Mirror", "price": 19.99, "image": "images/products/mspaint-mirror.png", "description": "Product Description", "category": "Home Decor", "date": "2025-01-01"},
-    {"id": 6, "name": "8BitDo© Keyboard", "price": 99.99, "image": "images/products/8bitdo-keyboard.png", "description": "Product Description", "category": "Electronics", "date": "2025-01-01"},
-    {"id": 7, "name": "Mushroom Plush", "price": 24.99, "image": "images/products/mushroom-plush.png", "description": "Product Description", "category": "Home Decor", "date": "2025-01-01"},
-    {"id": 8, "name": "Retro Pins", "price": 2.99, "image": "images/products/retro-pins.png", "description": "Product Description", "category": "Accessories", "date": "2025-01-01"}
+    {"id": 0, "name": "Tetris Lamp", "price": 29.99, "image": "images/products/tetris-lamp.png", "description": "Product Description", "category": "Home Decor", "date": "2025-01-01"},
+    {"id": 1, "name": "BurgerTime Keychain", "price": 9.99, "image": "images/products/burgertime-keychain.png", "description": "Product Description", "category": "Accessories", "date": "2025-01-01"},
+    {"id": 2, "name": "8BitDo© Controller", "price": 49.99, "image": "images/products/8bitdo-controller.png", "description": "Product Description", "category": "Electronics", "date": "2025-01-01"},
+    {"id": 3, "name": "Retro Stickers", "price": 2.99, "image": "images/products/retro-stickers.png", "description": "Product Description", "category": "Accessories", "date": "2025-01-01"},
+    {"id": 4, "name": "MSPaint Mirror", "price": 19.99, "image": "images/products/mspaint-mirror.png", "description": "Product Description", "category": "Home Decor", "date": "2025-01-01"},
+    {"id": 5, "name": "8BitDo© Keyboard", "price": 99.99, "image": "images/products/8bitdo-keyboard.png", "description": "Product Description", "category": "Electronics", "date": "2025-01-01"},
+    {"id": 6, "name": "Mushroom Plush", "price": 24.99, "image": "images/products/mushroom-plush.png", "description": "Product Description", "category": "Home Decor", "date": "2025-01-01"},
+    {"id": 7, "name": "Retro Pins", "price": 2.99, "image": "images/products/retro-pins.png", "description": "Product Description", "category": "Accessories", "date": "2025-01-01"}
 ]

@@ -6,10 +6,8 @@
     <title>[Products] - Glitch</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/text.css">
-    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/checkout.css">
     <script src="js/hover-animations.js" defer></script>
-    <script src="js/products-filter.js" defer></script>
-    <script src="js/sidebar.js" defer></script>
     <script src="js/cart-logic.js" defer></script>
 </head>
 <body>
@@ -65,72 +63,15 @@
         </div>
     </nav>
 
-    <div class="cart-popup">
-        <h2>YOUR CART</h2>
+    <main>
         <div class="cart-list">
-            <div class="cart-item">
-                <!-- Cart item content -->
-            </div>
+            <!-- Cart items will be injected here automatically -->
         </div>
         <p class="total-text text-black">Total: $0.00</p>
-        <div class="cart-controls">
-            <a href="checkout.html" class="checkout-button glitch-button btn-black-bg">
-                <div class="hover-animation"></div>
-                <p class="text-white">CHECKOUT</p>
-            </a>
-            <div class="empty-cart-button glitch-button btn-transparent">
-                <div class="hover-animation"></div>
-                <p class="text-black">EMPTY CART</p>
-            </div>
+        <div class="checkout-form">
+            
         </div>
-    </div>
-    <div class="cart-overlay"></div>
-
-
-    <div class="main-container">
-        <div class="minimize-button glitch-button btn-transparent black-text">
-            <div class="hover-animation"></div>
-            <img src="images/arrow.svg" alt="">
-        </div>
-        <div class="sidebar-container">
-            <div class="sidebar-header">
-                <h2 class="text-black">filter</h2>
-            </div>
-            <div class="options-container">
-                <p class="text-black">SORT BY:</p>
-                <div class="sort-links">
-                    <p class="text-black active">- Popularity</p>
-                    <p class="text-black">- Recent</p>
-                    <p class="text-black">- Lowest Price</p>
-                    <p class="text-black">- Highest Price</p>
-                </div>
-            </div>
-            <div class="options-container">
-                <p class="text-black">CATEGORIES:</p>
-                <div class="cat-links">
-                    <p class="text-black active">- All</p>
-                    <p class="text-black">- Home Decor</p>
-                    <p class="text-black">- Accessories</p>
-                    <p class="text-black">- Electronics</p>
-                </div>
-            </div>
-            <div class="options-container">
-                <p class="text-black">PRICE:</p>
-                <div class="price-buttons">
-                    <input id="min-price" type="number" placeholder="Min" min="0">
-                    <p class="text-black">-</p>
-                    <input id="max-price" type="number" placeholder="Max" min="0">
-                </div>
-            </div>
-            <div class="apply-button glitch-button btn-black-bg">
-                <div class="hover-animation"></div>
-                <p class="text-white">APPLY</p>
-            </div>
-        </div>
-        <div class="products-container">
-            <!-- Products will be spawned here -->
-        </div>
-    </div>
+    </main>
 
     <footer>
         <div class="footer-container">

@@ -31,12 +31,16 @@ function spawnProducts(data) {
                 <img src="${data[i].image}" alt="${data[i].name}">
             </div>
             <div class="product-info">
-                <h2 class="text-black">${data[i].name}</h2>
-                <p class="text-black">${data[i].category}</p>
+                <div class="product-info-top">
+                    <h2 class="text-black">${data[i].name}</h2>
+                    <p class="text-black">${data[i].category}</p>
+                </div>
+                <div class="product-info-bottom">
                 <p class="text-black">$${(data[i].price).toFixed(2)}</p>
-                <div id="cart-${data[i].id}" class="add-to-cart-button glitch-button btn-black-bg">
-                    <div class="hover-animation"></div>
-                    <p class="text-white">ADD TO CART</p>
+                    <div id="${data[i].id}" class="add-to-cart-button glitch-button btn-black-bg">
+                        <div class="hover-animation"></div>
+                        <p class="text-white">ADD TO CART</p>
+                    </div>
                 </div>
             </div>
         `;

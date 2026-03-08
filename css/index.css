@@ -88,11 +88,10 @@ header {
     flex-direction: row;
     justify-content: space-around;
     gap: 5%;
-    width: 87%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
-    min-width: 650px;
 }
 
 
@@ -137,11 +136,6 @@ header {
 
 @media screen and (max-width: 800px) {
 
-    nav {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
     header {
         flex-direction: column;
         height: auto;
@@ -152,11 +146,6 @@ header {
     .header-second {
         height: 200px;
         width: 100%;
-    }
-
-    footer {
-        padding-left: 30px;
-        padding-right: 30px;
     }
 
     .reviews-container {
@@ -167,30 +156,19 @@ header {
 }
 
 @media screen and (max-width: 520px) {
-    html {
-        zoom: 80%;
-    }
-    
-    h1{
-        font-size: 60px;
-    }
-
-    .nav-desktop {
-        display: none;
-    }
-
-    .nav-mobile {
-        display: flex;
-
-    }
 
     header {
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 135px;
         height: auto;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
+        gap: 20px;
+    }
+
+    .header-first {
+        padding: 30px 20px;
     }
 
     .header-second {
@@ -198,60 +176,9 @@ header {
         width: 100%;
     }
 
-    footer {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
     .reviews-container {
         min-width: 300px;
         width: 100%;
     }
 
-    .cart-popup {
-        width: calc(100% - 40px);
-        left: 20px;
-        right: 20px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        width: 125vw;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .footer-left {
-        flex-wrap:wrap;
-        height: 170px;
-        width: 100%;
-        min-width: none;
-        align-items: stretch;
-        justify-content:flex-start
-    }
-
-    .footer-designer{
-        align-items: flex-end;
-        margin: none;
-    }
-
-    .footer-designer p{
-        margin-top: 0;
-    }
-
-    .footer-designer img{
-        width: 100px;
-    }
-
-}
-
-@media screen and (max-width: 350px) {
-    html {
-        zoom: 65%;
-    }
-
-    .footer-container {
-        width: 150vw;
-    }
-    
 }
