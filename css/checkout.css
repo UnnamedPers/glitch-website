@@ -7,7 +7,7 @@ main{
     gap: 5%;
 }
 
-.checkout-form{
+#checkout-form{
     display: flex;
     flex-direction: column;
     align-items:flex-end;
@@ -15,7 +15,7 @@ main{
     gap: 20px;
 }
 
-.checkout-controls{
+#checkout-controls{
     display: flex;
     width: 100%;
     padding-top: auto;
@@ -43,12 +43,12 @@ main{
         max-height: 65vh;
     }
 
-    .checkout-form{
+    #checkout-form{
         padding-top: 20px;
         align-items:flex-start;
     }
 
-    .checkout-controls{
+    #checkout-controls{
         flex-direction: column;
     }
 }

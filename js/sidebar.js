@@ -1,6 +1,6 @@
-const sidebarContainer = document.querySelector(".sidebar-container");
-const mainContainer = document.querySelector(".main-container");
-const minimizeButton = document.querySelector(".minimize-button");
+const sidebarContainer = document.querySelector("#sidebar-container");
+const mainContainer = document.querySelector("#main-container");
+const minimizeButton = document.querySelector("#minimize-button");
 
 // Function to update sidebar state
 function setSidebarState(isMinimized) {

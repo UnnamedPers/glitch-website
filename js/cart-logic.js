@@ -1,7 +1,7 @@
 const cartButtons = document.querySelectorAll('.cart-button');
-const cartPopup = document.querySelector('.cart-popup');
-const cartOverlay = document.querySelector('.cart-overlay');
-let totalText = document.querySelector('.total-text');
+const cartPopup = document.querySelector('#cart-popup');
+const cartOverlay = document.querySelector('#cart-overlay');
+let totalText = document.querySelector('#total-text');
 
 
 let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
@@ -138,7 +138,7 @@ document.addEventListener('click', (event) => {
     }
 });
 
-const emptyCartButton = document.querySelector('.empty-cart-button');
+const emptyCartButton = document.querySelector('#empty-cart-button');
 emptyCartButton.addEventListener('click', () => {
     cart = [];
     localStorage.setItem('cart', JSON.stringify(cart));

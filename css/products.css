@@ -1,6 +1,6 @@
 /* Main Container */
 
-.main-container {
+#main-container {
     display: flex;
     flex-direction: row;
     gap: 5%;
@@ -9,7 +9,7 @@
     transition: all 0.5s ease-in-out;
 }
 
-.main-container.minimized {
+#main-container.minimized {
     gap: 0;
     padding-left: 60px; /* Leave space for the button */
     padding-right: 30px;
@@ -17,7 +17,7 @@
 
 /* Sidebar */
 
-.sidebar-container {
+#sidebar-container {
     display: flex;
     position: sticky;
     top: 100px;
@@ -39,7 +39,7 @@
     overflow: hidden;
 }
 
-.sidebar-container.minimized {
+#sidebar-container.minimized {
     max-width: 0;
     max-height: 0;
     padding: 0;
@@ -49,7 +49,7 @@
     pointer-events: none;
 }
 
-.sidebar-container h2{
+#sidebar-container h2{
     margin: 0;
 }
 
@@ -60,7 +60,7 @@
     align-items: center;
 }
 
-.minimize-button{
+#minimize-button{
     position: fixed;
     top: 120px;
     left: 20px;
@@ -71,7 +71,7 @@
     background-color: var(--background);
 }
 
-.minimize-button img{
+#minimize-button img{
     width: 20px;
     height: 20px;
 }
@@ -128,14 +128,14 @@
     height: 40px;
 }
 
-.apply-button{
+#apply-button{
     width: 150px;
     height: 50px;
 }
 
 /* Products */
 
-.products-container {
+#products-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
     column-gap: 30px;
@@ -200,14 +200,14 @@
 
 @media screen and (max-width: 800px) {
 
-    .main-container {
+    #main-container {
         padding-left: 20px;
         padding-right: 20px;
         flex-direction: column;
         gap: 20px;
     }
 
-    .sidebar-container {
+    #sidebar-container {
         position: relative;
         top: 0;
         margin-left: 50px;
@@ -215,7 +215,7 @@
         max-width: none;
     }
 
-    .minimize-button {
+    #minimize-button {
         left: 20px;
     }
 
@@ -224,20 +224,20 @@
 
 @media screen and (max-width: 520px) {
 
-    .minimize-button {
+    #minimize-button {
         top: 140px;
     }
 
-    .main-container {
+    #main-container {
         padding-top: 130px;
     }
 
-    .sidebar-container{
+    #sidebar-container{
         top: 0;
         width: calc(100% - 50px);
     }
 
-    .main-container.minimized {
+    #main-container.minimized {
         padding-left: 60px;
         padding-right: 20px;
     }

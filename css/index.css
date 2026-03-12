@@ -44,14 +44,14 @@ header {
     background-color: var(--green);
 }
 
-.sale-animation {
+#sale-animation {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
 
-.explore-button {
+#explore-button {
     width: 200px;
     height: 50px;
 }
@@ -59,7 +59,7 @@ header {
 
 /* SALE ANIMATION */
 
-.sale-animation {
+#sale-animation {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -69,7 +69,7 @@ header {
 }
 
 
-.sale-animation h2 {
+#sale-animation h2 {
     position: absolute;
     white-space: nowrap;
     left: 1000px;

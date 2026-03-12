@@ -66,34 +66,34 @@
         </div>
     </nav>
 
-    <div class="cart-popup">
+    <div id="cart-popup" class="cart-popup">
         <h2 class="text-black ">YOUR CART</h2>
         <div class="cart-list">
             <div class="cart-item">
                 <!-- Cart item content -->
             </div>
         </div>
-        <p class="total-text text-black">Total: $0.00</p>
+        <p id="total-text" class="total-text text-black">Total: $0.00</p>
         <div class="cart-controls">
-            <a href="checkout.html" class="checkout-button glitch-button btn-black-bg">
+            <a href="checkout.html" id="checkout-button" class="glitch-button btn-black-bg">
                 <div class="hover-animation"></div>
                 <p class="text-white">CHECKOUT</p>
             </a>
-            <div class="empty-cart-button glitch-button btn-transparent">
+            <div id="empty-cart-button" class="glitch-button btn-transparent">
                 <div class="hover-animation"></div>
                 <p class="text-black">EMPTY CART</p>
             </div>
         </div>
     </div>
-    <div class="cart-overlay"></div>
+    <div id="cart-overlay" class="cart-overlay"></div>
 
 
-    <div class="main-container">
-        <div class="minimize-button glitch-button btn-transparent black-text">
+    <div id="main-container" class="main-container">
+        <div id="minimize-button" class="glitch-button btn-transparent black-text">
             <div class="hover-animation"></div>
             <img class="obj-black" src="images/logo/arrow.svg" alt="">
         </div>
-        <div class="sidebar-container">
+        <div id="sidebar-container" class="sidebar-container">
             <div class="sidebar-header">
                 <h2 class="text-black">filter</h2>
             </div>
@@ -123,12 +123,12 @@
                     <input id="max-price" type="number" placeholder="Max" min="0">
                 </div>
             </div>
-            <div class="apply-button glitch-button btn-black-bg">
+            <div id="apply-button" class="glitch-button btn-black-bg">
                 <div class="hover-animation"></div>
                 <p class="text-white">APPLY</p>
             </div>
         </div>
-        <div class="products-container">
+        <div id="products-container" class="products-container">
             <!-- Products will be spawned here -->
         </div>
     </div>

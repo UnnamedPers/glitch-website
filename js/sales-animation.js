@@ -1,5 +1,5 @@
 const saletexts = [];
-const container = document.querySelector(".sale-animation");
+const container = document.querySelector("#sale-animation");
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));

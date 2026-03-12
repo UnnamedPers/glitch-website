@@ -19,10 +19,10 @@ function applyTheme(mode) {
             el.src="images/logo/logo-black.png";
         })
 
-        const exploreBtn = document.querySelector(".explore-button");
+        const exploreBtn = document.querySelector("#explore-button");
         if (exploreBtn) {
             exploreBtn.style.borderColor = "#e9e9e9";
-            document.querySelector(".explore-button p").style.color = "#e9e9e9";
+            document.querySelector("#explore-button p").style.color = "#e9e9e9";
         }
     } else {
         document.documentElement.style.setProperty('--background', '#e9e9e9');
@@ -40,10 +40,10 @@ function applyTheme(mode) {
             el.src="images/logo/logo-white.png";
         })
 
-        const exploreBtn = document.querySelector(".explore-button");
+        const exploreBtn = document.querySelector("#explore-button");
         if (exploreBtn) {
             exploreBtn.style.borderColor = "#1e1e1e"; // Set explicitly in light mode to prevent sticky dark styles
-            document.querySelector(".explore-button p").style.color = "#1e1e1e";
+            document.querySelector("#explore-button p").style.color = "#1e1e1e";
         }
     }
 }

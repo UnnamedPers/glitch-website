@@ -1,11 +1,11 @@
 // Product spawning
 
-const productsContainer = document.querySelector(".products-container");
+const productsContainer = document.querySelector("#products-container");
 const sortLinks = document.querySelectorAll(".sort-links p");
 const catLinks = document.querySelectorAll(".cat-links p");
 const minPrice = document.querySelector("#min-price");
 const maxPrice = document.querySelector("#max-price");
-const applyButton = document.querySelector(".apply-button");
+const applyButton = document.querySelector("#apply-button");
 
 let allProducts = [];
 let activeSort = "popularity";

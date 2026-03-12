@@ -1,8 +1,8 @@
-const productName = document.querySelector(".info-section .name");
-const productCategory = document.querySelector(".info-section .category");
-const productPrice = document.querySelector(".info-section .price");
-const productDescription = document.querySelector(".info-section .description");
-const productImage = document.querySelector(".image-section img");
+const productName = document.querySelector("#info-section .name");
+const productCategory = document.querySelector("#info-section .category");
+const productPrice = document.querySelector("#info-section .price");
+const productDescription = document.querySelector("#info-section .description");
+const productImage = document.querySelector("#image-section img");
 const addToCartButton = document.querySelector(".add-to-cart-button");
 
 const productId = localStorage.getItem("product-page");
