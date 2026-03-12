@@ -111,7 +111,9 @@ function initAllGlitchButtons() {
     document.querySelectorAll('.glitch-button').forEach(b => {
         let mode = "black";
         
-        if (b.classList.contains('btn-black-bg')) {
+        if (b.id === 'explore-button') {
+            mode = "white";
+        } else if (b.classList.contains('btn-black-bg')) {
             mode = "white";
         } else if (b.classList.contains('btn-pink-bg')) {
             mode = "pink";
