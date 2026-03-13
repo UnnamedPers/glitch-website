@@ -38,7 +38,6 @@ function spawnProducts(data) {
                 <div class="product-info-bottom">
                 <p class="text-black">$${(data[i].price).toFixed(2)}</p>
                     <div id="${data[i].id}" class="add-to-cart-button glitch-button btn-black-bg">
-                        <div class="hover-animation"></div>
                         <p class="text-white">ADD TO CART</p>
                     </div>
                 </div>
